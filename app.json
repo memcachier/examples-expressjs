@@ -1,0 +1,15 @@
+{
+  "name": "MemCachier Express.js Tutorial",
+  "description": "Node.js app for a tutorial on using Express.js, MemCachier and Heroku together",
+  "keywords": [" node.js", "node", "expressjs", "memcache", "memcached", "memcachier", "caching", "tutorial", "performance" ],
+  "logo": "https://www.memcachier.com/assets/logo-large.png",
+  "image": "heroku/nodejs",
+  "website": "https://www.memcachier.com",
+  "repository": "https://github.com/memcachier/examples-expressjs",
+  "addons": [ "memcachier" ],
+  "env": {
+    "NODE_ENV": {
+      "value": "production"
+    }
+  }
+}

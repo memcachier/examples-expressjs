@@ -1,0 +1,20 @@
+{
+  "name": "examples-node-expressjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-memjs": "^0.2.1",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "express-formidable": "^1.0.0",
+    "express-session": "^1.15.6",
+    "memjs": "^1.2.0"
+  }
+}

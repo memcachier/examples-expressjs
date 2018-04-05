@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Express.js caching example</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Express.js caching example
+      </h1>
+
+      <p class="lead">For any number N (max 10000), we'll find the largest prime number
+        less than or equal to N.
+      </p>
+      <form class="form-inline" action="/">
+        <input type="text" class="form-control" name="n" />
+        <input type="submit" class="btn btn-primary" value="Find Prime" />
+      </form>
+
+      <hr>
+      <!-- Show the result -->
+      <% if (locals.prime) { %>
+        <div class="alert alert-primary">
+          <p class="lead">Largest prime less or equal than <%= n %> is <%= prime %></p>
+          <p>Likes: <%= likes %></p>
+          <form method='POST'>
+            <input type="hidden" name="n" value="<%= n %>" />
+            <input type="submit" class="btn btn-primary" value="Like!" />
+          </form>
+        </div>
+      <% } %>
+      <!-- Error handling -->
+      <% if (locals.error) { %>
+        <div class="alert alert-danger">
+          <p class="lead"><%= error %></p>
+        </div>
+      <% } %>
+
+    </div>
+  </body>
+</html>

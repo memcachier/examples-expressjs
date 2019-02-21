@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var port = process.env.PORT || 3000;
 app.listen(port);
 console.log("Listening on port " + port);
-
+console.log("process.env:", process.env)
 // Session config
 app.use(session({
   secret: 'ClydeIsASquirrel',

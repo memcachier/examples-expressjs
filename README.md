@@ -56,27 +56,7 @@ linzjax@express-memcache:~$ sudo chown linzjax:linzjax .ssh/authorized_key
 We can now login to our droplet with our new user from our terminal:
 ```bash
 $ ssh linzjax@<DROPLET_IP>
-linzjax@express-memcache:~$ git clone git@github.com:memcachier/examples-expressjs.git
-```
-
-<div class="alert alert-info">
-   If you're getting a permission denied error, chances are you'll need to create
-   a new set of ssh keys for your droplet.
-   ```
-   linzjax@express-memcache:~$ cd .ssh
-   linzjax@express-memcache:~/.ssh$ ssh-keygen -t rsa -b 4096 -C "lindsey@memcachier.com"
-   ```
-   You'll be asked for a name, it can be whatever you like, but unless told
-   otherwise, Github looks for `id_rsa` keys so it's easiest to leave your keyname
-   as that. You'll also be prompted for a passcode. You can just hit enter to
-   leave it blank.
-
-   At this point you can copy the id_rsa.pub into your Github Account
-   Settings > Security > SSH and GPG Keys. This will give your DigitalOcean
-   droplet Github access.
-   </div>
-
-```bash
+linzjax@express-memcache:~$ git clone https://github.com/<username>/examples-expressjs.git
 linzjax@express-memcache:~/$ cd examples-express
 linzjax@express-memcache:~/examples-express$ sudo npm install -g pm2
 linzjax@express-memcache:~/examples-express$ pm2 start app.js
